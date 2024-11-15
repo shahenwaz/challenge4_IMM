@@ -24,7 +24,6 @@ public class EnemyX : MonoBehaviour
         Vector3 lookDirection = (playerGoal.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed * Time.deltaTime);
         playerGoal = GameObject.Find("Player Goal");
-
     }
 
     private void OnCollisionEnter(Collision other)
